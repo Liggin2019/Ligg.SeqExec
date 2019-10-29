@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+//for 2017, have an error: Error	RC1015	cannot open include file 'afxres.h'. 
+//#include "afxres.h"
+#include "winres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOG_BILLBOARD DIALOGEX 0, 0, 263, 68
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_CAPTION
+CAPTION "Current step is running, plz wait..."
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Current step is running. \n\rThis may take several minutes...",TXT_BillboardMsg,7,7,249,54
+END
+
+DIALOG_MAIN DIALOGEX 0, 0, 419, 317
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SeqExec"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",BTN_Next,93,287,50,14
+    PUSHBUTTON      "Cancel",BTN_Cancel,283,286,50,14
+    CONTROL         "Step0",CKBOX_Step0,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,22,354,10
+    CONTROL         "Step1",CKBOX_Step1,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,31,354,10
+    CONTROL         "Step2",CKBOX_Step2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,39,354,10
+    CONTROL         "Step3",CKBOX_Step3,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,48,354,10
+    CONTROL         "Step4",CKBOX_Step4,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,56,354,10
+    CONTROL         "Step5",CKBOX_Step5,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,65,354,10
+    CONTROL         "Step6",CKBOX_Step6,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,74,354,10
+    CONTROL         "Step7",CKBOX_Step7,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,82,354,10
+    CONTROL         "Step8",CKBOX_Step8,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,91,354,10
+    CONTROL         "Step9",CKBOX_Step9,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,100,354,10
+    CONTROL         "Step10",CKBOX_Step10,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,108,354,10
+    CONTROL         "Step11",CKBOX_Step11,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,117,354,10
+    CONTROL         "Step12",CKBOX_Step12,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,125,354,10
+    CONTROL         "Step13",CKBOX_Step13,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,134,354,10
+    CONTROL         "Step14",CKBOX_Step14,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,143,354,10
+    CONTROL         "Step15",CKBOX_Step15,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,151,354,10
+    CONTROL         "Step16",CKBOX_Step16,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,160,354,10
+    CONTROL         "Step17",CKBOX_Step17,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,168,354,10
+    CONTROL         "Step18",CKBOX_Step18,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,177,354,10
+    CONTROL         "Step19",CKBOX_Step19,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,187,354,10
+    CONTROL         "Step20",CKBOX_Step20,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,196,354,10
+    CONTROL         "Step21",CKBOX_Step21,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,204,354,10
+    CONTROL         "Step22",CKBOX_Step22,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,213,354,10
+    CONTROL         "Step23",CKBOX_Step23,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,222,354,10
+    CONTROL         "Step24",CKBOX_Step24,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,230,354,10
+    CONTROL         "Step25",CKBOX_Step25,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,239,354,10
+    CONTROL         "Step26",CKBOX_Step26,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,247,354,10
+    CONTROL         "Step27",CKBOX_Step27,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,256,354,10
+    CONTROL         "Step28",CKBOX_Step28,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,265,354,10
+    CONTROL         "Step29",CKBOX_Step29,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,51,273,354,10
+    CONTROL         "The following checked items are required to install or Run",CKBOX_SelectAll,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,52,8,360,10
+END
+
+DIALOG_ENCRPT DIALOGEX 0, 0, 314, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Caculate Des encrpt code "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Caculate",BTN_Caculate,96,72,50,14
+    PUSHBUTTON      "Cancel",BTN_Cancel,191,74,50,14
+    CTEXT           "Encrpt code: ",TXT_EncrptCode,11,42,59,13
+    CTEXT           "Clear code: ",TXT_ClearCode,13,22,59,13
+    EDITTEXT        EDIT_ClearCode,68,20,208,14,ES_AUTOHSCROLL
+    EDITTEXT        EDIT_EncrptCode,67,40,209,14,ES_AUTOHSCROLL
+END
+
+DIALOG_MSG DIALOGEX 0, 0, 288, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "System Message"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",BTN_Ok,123,82,50,14
+    EDITTEXT        EDIT_Msg,7,4,274,65,ES_CENTER | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_TRANSPARENT
+END
+
+DIALOG_PASSWORDVERIFICATION DIALOGEX 0, 0, 211, 69
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Please Input Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",BTN_Ok,57,43,39,14
+    CTEXT           "Password: ",TXT_Password,6,17,50,13
+    EDITTEXT        EDIT_Password,52,16,142,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",BTN_Cancel,145,43,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    DIALOG_BILLBOARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 412
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    DIALOG_ENCRPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 104
+    END
+
+    DIALOG_MSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 96
+    END
+
+    DIALOG_PASSWORDVERIFICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    MSG_PLZ_WAIT            "please wait"
+END
+
+STRINGTABLE
+BEGIN
+    ERR_NOT_SINGLE_INSTANCE "Another version of setup is already running.\n\rOnly one version of this application can run at a single time."
+    ERR_SINGLE_INSTANCE_FAIL 
+                            "CreateMutex failed to allocate handle for single instance check."
+    ERR_FILE_HAS_PROBLEM    "File %s has problem."
+    ERR_FILE_NOT_EXSIT      "File %s does not exsit."
+    ERR_CREATE_PROCESS_FAILURE 
+                            "CreateProcess failed for the following command-line: %s"
+    ERR_INSUFFICIENT_PRIVILEGES 
+                            "Local system administrator's privileges are required, it will now exit!"
+    ERR_ERROR_CAPTION       "%s Setup Error"
+    ERR_VERSION_DETECT_FAILED "Version detection failed for %s. "
+END
+
+STRINGTABLE
+BEGIN
+    MSG_REBOOT_QUERY        "Procedures completed. Would you like to reboot now?"
+    ERR_READ_INI_FILE_ERROR "Read ini file error, key %s  does not exist or value is null."
+    ERR_STEP_NO_CANOT_GREATER_THAN "Step No. can't be greater than %s."
+    ERR_INI_FILE_VALUE_INCORRECT "Ini file value is incorrect, key %s."
+    MSG_REBOOT_REQUIRED     "A reboot is required in order to continue.  Would you like to reboot now?"
+    ERR_ERROR1              "Either the syntax used to specify parameters to Dotnetfx.exe is incorrect, or the parameters are invalid"
+    ERR_ERROR2              "You do not have the permissions required to install or uninstall this application. Please contact your administrator"
+    ERR_ERROR3              "The Windows Installer installation failed. As a result, the installation of Dotnetfx.exe cannot proceed."
+    ERR_ERROR4              "Due to the improper installation of Windows Installer, the installation of Dotnetfx.exe cannot proceed."
+END
+
+STRINGTABLE
+BEGIN
+    ERR_ERROR5              "A fatal error occurred and the installation of Dotnetfx.exe cannot proceed."
+    ERR_ERROR6              "Another instance of the .Net Installer is already running."
+    ERR_ERROR7              "You attempted to install a version of Dotnetfx.exe that is already installed. Installation cannot proceed."
+    ERR_ERROR8              "Cannot get Temp directory."
+    ERR_ERROR9              "A beta version of the .NET Framework was detected on the computer. You must uninstall any beta versions before attempting to install Dotnetfx.exe."
+    ERR_ERROR10             "Cannot get System directory."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

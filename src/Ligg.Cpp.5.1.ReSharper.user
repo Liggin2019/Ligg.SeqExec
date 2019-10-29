@@ -1,0 +1,73 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.h" caret="0" fromTop="0" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:FileHelper.cpp/l:..?Share?FileHelper.cpp" caret="62" fromTop="3" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:ProcessHelper.cpp/l:..?Share?ProcessHelper.cpp" caret="715" fromTop="24" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:CSettings.h" caret="1297" fromTop="14" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.h" caret="0" fromTop="0" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="6147" fromTop="36" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="686" fromTop="14" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:resource.h" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.h" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:des.cpp/l:..?Share?Encrpt?des.cpp" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:resources.rc" caret="5430" fromTop="106" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:StringHelper.cpp/l:..?Share?StringHelper.cpp" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:FileHelper.cpp/l:..?Share?FileHelper.cpp" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:EncryptionHelper.cpp/l:..?Share?Encrpt?EncryptionHelper.cpp" caret="0" fromTop="0" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:CSettings.cpp" caret="6219" fromTop="4" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:EncryptHelper.cpp/l:..?Share?Encrpt?EncryptHelper.cpp" caret="465" fromTop="19" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="31791" fromTop="20" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="16" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="34" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="20" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="12" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="21" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="838" fromTop="23" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="1276" fromTop="18" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="1619" fromTop="29" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="2319" fromTop="18" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="4359" fromTop="18" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="4685" fromTop="32" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="5323" fromTop="18" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="5452" fromTop="22" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="5788" fromTop="29" />
+      <File id="C5D382B3-C078-40EC-A1B3-B978B159DBD4/f:main.cpp" caret="6147" fromTop="36" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="21" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="24" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="11358" fromTop="27" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="3233" fromTop="29" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="3233" fromTop="27" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="844" fromTop="24" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="823" fromTop="14" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="844" fromTop="20" />
+      <File id="E9AF67A8-63D0-45E1-BE1B-45B47705A73E/f:main.cpp" caret="686" fromTop="14" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="31842" fromTop="31" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="32018" fromTop="29" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="31448" fromTop="10" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="31614" fromTop="15" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="32015" fromTop="26" />
+      <File id="69E29E72-CF14-40C5-A82C-957C2A22E6C9/f:main.cpp" caret="31791" fromTop="20" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

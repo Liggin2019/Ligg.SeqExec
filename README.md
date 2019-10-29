@@ -1,6 +1,6 @@
 # Ligg.SeqExec
 
-本项目是一个顺序执行工具，能被用作.net程序的启动器。任务包括：探测.net framework版本、安装.net framework、校验启动密码、运行.exe文件(以管理员帐号)、执行Windows脚本(以管理员帐号)以及以不同选项安装MSI文件。
+本项目是一个顺序执行工具，能被用作.net程序的启动器。任务包括：探测.net framework版本、安装.net framework、校验启动密码、运行.exe文件(以管理员帐号)、执行Windows脚本(以管理员帐号)以及以不同选项安装MSI文件(以管理员帐号)。
 
 This project is a sequential execution tool by C++, can be used as a starter for .net program. Tasks include: detect .net framework version, install .net framework, verify password at start, run exe file(or as admin), execute a command(or as admin), install MSI format file by options. 
 
@@ -10,47 +10,47 @@ This project is a sequential execution tool by C++, can be used as a starter for
 Following is the usage guide.
 
 
-1. 每个.exe文件关联一个同名的配置文件。
+a. 每个.exe文件关联一个同名的配置文件。
 
-1. Each .exe file is linked to .ini file of same file name prefix. 
-
-
-2. 在.ini文件里, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". 为确保在有[RunByAdmin]=true的设置步骤里，以管理员身份运行成功，请设置'Administrator'本地帐号的密码为"P@s$w0rd"。当然你可以用用例5的方式修改你的[RunAsAdmin]/[Id][Password]与实际匹配。
-
-2. In .ini file, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
+a. Each .exe file is linked to .ini file of same file name prefix. 
 
 
-3.设置[IsDefaultMode]=false会弹出一个所有步骤的列表供选择是否执行。
+b. 在.ini文件里, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". 为确保在有[RunByAdmin]=true的设置步骤里，以管理员身份运行成功，请设置'Administrator'本地帐号的密码为"P@s$w0rd"。当然你可以用用例5的方式修改你的[RunAsAdmin]/[Id][Password]与实际匹配。
 
-3. [IsDefaultMode]=false will pop up a list of all steps for selecting to execute.
-
-
-4. 设置[IsQuietMode]=false,会在当步骤运行时在屏幕左上角弹出一个步骤描述窗口。
-
-4. [IsQuietMode]=false will pop up a step description window at the left-top corner of screen during running of each step.
+b. In .ini file, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
 
 
-5. 设置[IsCompulsory]=true,表示该步骤是强制执行的。
+c.设置[IsDefaultMode]=false会弹出一个所有步骤的列表供选择是否执行。
 
-5. [IsCompulsory]=true means you have to select this step to execute. 
+c. [IsDefaultMode]=false will pop up a list of all steps for selecting to execute.
 
 
-6. 对于[RunType]=InstallNetFx, [Args]=v4\Full^Install^1，假如.net Framework的版本大于4小于5，探测程序默认正确，不会安装.net Framework；同理对于[Args]=v4.6\Full^Install^1，假如.net Framework的版本大于4.6小于4.7，探测程序默认正确。
+d. 设置[IsQuietMode]=false,会在当步骤运行时在屏幕左上角弹出一个步骤描述窗口。
 
-6. For [RunType]=InstallNetFx, [Args]=v4\Full^Install^1 means if your .netFX version is above 4 and below 5, Detecting NetFx will return OK, will not install. 
+d. [IsQuietMode]=false will pop up a step description window at the left-top corner of screen during running of each step.
+
+
+e. 设置[IsCompulsory]=true,表示该步骤是强制执行的。
+
+e. [IsCompulsory]=true means you have to select this step to execute. 
+
+
+f. 对于[RunType]=InstallNetFx, [Args]=v4\Full^Install^1，假如.net Framework的版本大于4小于5，探测程序默认正确，不会安装.net Framework；同理对于[Args]=v4.6\Full^Install^1，假如.net Framework的版本大于4.6小于4.7，探测程序默认正确。
+
+f. For [RunType]=InstallNetFx, [Args]=v4\Full^Install^1 means if your .netFX version is above 4 and below 5, Detecting NetFx will return OK, will not install. 
    If the  [Args]=v4.6\Full^Install^1, means if your .netFX version is above 4.6 and below 4.7, Detecting NetFx will return OK.
 
 
-7. 配置项[StartPolicy]决定了是否弹出密码验证窗口,规则是'运行文件名前缀+prefix' + '^0' or '运行文件名前缀' + '^n'(n>0)。也就是说，假如你的执行文件是LgSeqExec1.exe，'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'...的加密文本就是你的[StartPolicy]的值。'LgSeqExec1^0'无启动密码，'LgSeqExec1^1' to 'LgSeqExec1^n'有启动密码。
+g. 配置项[StartPolicy]决定了是否弹出密码验证窗口,规则是'运行文件名前缀+prefix' + '^0' or '运行文件名前缀' + '^n'(n>0)。也就是说，假如你的执行文件是LgSeqExec1.exe，'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'...的加密文本就是你的[StartPolicy]的值。'LgSeqExec1^0'无启动密码，'LgSeqExec1^1' to 'LgSeqExec1^n'有启动密码。
 
-7. [StartPolicy], decides if poping up a start password. The rule is: '.exe file name prefix' + '^0' or 'prefix' + '^n'(n>0). '^0'means no start password, '^n'means has.
+g. [StartPolicy], decides if poping up a start password. The rule is: '.exe file name prefix' + '^0' or 'prefix' + '^n'(n>0). '^0'means no start password, '^n'means has.
    i.e., if your .exe file name is LgSeqExec1.exe, an encrypted text of 'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'... is your [StartPolicy]. 'LgSeqExec1^0' means has no start password; 'LgSeqExec1^1' to 'LgSeqExec1^n' means has start password.
    Run case 5, to get an encrypted text. 
 
 
-8.下面是对各个用例的解释：
+h.下面是对各个用例的解释：
 
-8. Following is the function description of each case:
+h. Following is the function description of each case:
 
 
 用例0: .exe 文件: LgSeqExec.exe; .ini 文件: .\LgSeqExec.ini---直接运行一个基于.netFx4的外部执行文件，假如机器的.net Framework版本低于4.0，该执行文件会弹出错误提示。

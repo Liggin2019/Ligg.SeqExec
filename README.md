@@ -1,6 +1,6 @@
 # Ligg.SeqExec
 
-//*********************************************** Please see following guide before use it ***************************************************************//
+PLEASE SEE FOLLOWING GUIDE BEFORE USE IT
 
 
 1. Each .exe file is linked to .ini file of same file name prefix. 

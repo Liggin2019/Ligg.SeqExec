@@ -38,5 +38,9 @@
 5. 用例5: .exe 文件: LgSeqExec5.exe; .ini 文件: .\LgSeqExec5.ini---加密文本。供加密配置项[RunAsAdmin]/[Id]&[Password]和[StartPolicy]。
 
 ## 示例截图
-- 登录
-![登录](https://liggin2019.gitee.io/static/images/Ligg.Vue-login.png)
+#### 用例2
+![用例2](https://liggin2019.gitee.io/static/images/SeqExec/case2.png)
+#### 用例3
+![用例3](https://liggin2019.gitee.io/static/images/SeqExec/case3.png)
+#### 用例5
+![Case5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)

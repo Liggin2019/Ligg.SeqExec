@@ -1,4 +1,5 @@
 # About Ligg.SeqExec
+简体中文 | [English](./README.md)
 - SeqExec is abbreviation of 'Sequential Executor'. 
 - Current version: 1.2.1
 
@@ -7,7 +8,7 @@ This project is a sequential execution tool by C++, can be used as a starter for
 
 
 ## Usage Guide.
-### Please download ‘demo.rar’file for run each case below.
+### Please download demo.rar file to run each case below.
 1. Each .exe file is linked to .ini file of same file name prefix. 
 
 2. In .ini file, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
@@ -26,7 +27,6 @@ This project is a sequential execution tool by C++, can be used as a starter for
    i.e., if your .exe file name is LgSeqExec1.exe, an encrypted text of 'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'... is your [StartPolicy]. 'LgSeqExec1^0' means has no start password; 'LgSeqExec1^1' to 'LgSeqExec1^n' means has start password.
    Run case 5, to get an encrypted text. 
 
-### Following is the function description of each case:
 
 ## Cases
 0. Case0: .exe file: LgSeqExec.exe; .ini file: .\LgSeqExec.ini---Directly run an outside .exe file based on .netFx 4, but  your .net Framework on your machine is below 4, the outside application will pop up a error message.
@@ -45,3 +45,10 @@ This project is a sequential execution tool by C++, can be used as a starter for
 5. Case5: .exe file: LgSeqExec5.exe; .ini file: .\LgSeqExec5.ini---Encrypt text for [RunAsAdmin]/[Id]&[Password]和[StartPolicy] in .ini file. 
 
 ## Demo Snapshot
+
+#### Case2
+![Case2](https://liggin2019.gitee.io/static/images/SeqExec/case2.png)
+#### Case3
+![Case3](https://liggin2019.gitee.io/static/images/SeqExec/case3.png)
+#### Case5
+![Case5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)

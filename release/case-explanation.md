@@ -1,6 +1,4 @@
-//********************************************************************************************************************************************************//
-//**********************read me***************************************************************************************************************************//
-//********************************************************************************************************************************************************//
+//# Description
 
 1. Each .exe file is linked to .ini file of same file name prefix. 
 
@@ -22,20 +20,21 @@ To ensure run as admin when setting [IfRunByAdmin]=true in Step-x, please change
  
 8. Following is the function description of each case:
 
-Case0: .exe file: LgSeqExec.exe; .ini file: .\LgSeqExec.ini
+## Cases
+0. Case0: .exe file: LgSeqExec.exe; .ini file: .\LgSeqExec.ini
 	Directly run outside .exe file based on .net Framework 4. If your .net Framework on your machine is below 4, the outside application will pop up a error message.
 
-Case1: .exe file: LgSeqExec1.exe; .ini file: .\LgSeqExec1.ini
+1. Case1: .exe file: LgSeqExec1.exe; .ini file: .\LgSeqExec1.ini
 	Detect and install .net Framework 4 by assigned [RunAsAdmin]/Id&Password , then run outside .exe file based on .net Framework 4. 
 
-Case2: .exe file: LgSeqExec2.exe; .ini file: .\LgSeqExec2.ini 
+2. Case2: .exe file: LgSeqExec2.exe; .ini file: .\LgSeqExec2.ini 
 	Detect and install .net Framework 4 by assigned [RunAsAdmin]/Id&Password ,Verify password(password is '123'), then run outside exe file based on .net Framework 4. 
 
-Case3: .exe file: LgSeqExec3.exe; .ini file: .\LgSeqExec3.ini 
+3. Case3: .exe file: LgSeqExec3.exe; .ini file: .\LgSeqExec3.ini 
 	Detect and install .net Framework 4 by assigned [RunAsAdmin]/Id&Password , then run outside some exe files(based on .net Framework 4) by setting [IsDefaultMode]=false, [IsDefaultMode]=false.
 	
-Case4: .exe file: LgSeqExec4.exe; .ini file: .\LgSeqExec4.ini 
+4. Case4: .exe file: LgSeqExec4.exe; .ini file: .\LgSeqExec4.ini 
 	Run outside LgXcopyA.exe(a native program) to copy a file to c:\ and c:\temp by assigned [RunAsAdmin]/Id&Password.  
 
-Case5: .exe file: LgSeqExec5.exe; .ini file: .\LgSeqExec5.ini 
+5. Case5: .exe file: LgSeqExec5.exe; .ini file: .\LgSeqExec5.ini 
 	Encrypt text.

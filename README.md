@@ -1,5 +1,6 @@
 # About Ligg.SeqExec
-简体中文 | [English](./README.md)
+English | [简体中文](./README.zh-CN.md)
+
 - SeqExec is abbreviation of 'Sequential Executor'. 
 - Current version: 1.2.1
 

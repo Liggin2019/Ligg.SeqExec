@@ -43,4 +43,4 @@
 #### 用例3
 ![用例3](https://liggin2019.gitee.io/static/images/SeqExec/case3.png)
 #### 用例5
-![Case5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)
+![用例5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)

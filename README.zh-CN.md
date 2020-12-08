@@ -9,10 +9,10 @@
 
 ## 使用指南
 
-a. 每个.exe文件关联一个同名的配置文件。
-b. 在.ini文件里, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". 为确保在有[RunByAdmin]=true的设置步骤里，以管理员身份运行成功，请设置'Administrator'本地帐号的密码为"P@s$w0rd"。当然你可以用用例5的方式修改你的[RunAsAdmin]/[Id][Password]与实际匹配。
+1. 每个.exe文件关联一个同名的配置文件。
+2. 在.ini文件里, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". 为确保在有[RunByAdmin]=true的设置步骤里，以管理员身份运行成功，请设置'Administrator'本地帐号的密码为"P@s$w0rd"。当然你可以用用例5的方式修改你的[RunAsAdmin]/[Id][Password]与实际匹配。
 
-c. 设置[IsDefaultMode]=false会弹出一个所有步骤的列表供选择是否执行。
+3. 设置[IsDefaultMode]=false会弹出一个所有步骤的列表供选择是否执行。
 
 d. 设置[IsQuietMode]=false,会在当步骤运行时在屏幕左上角弹出一个步骤描述窗口。
 

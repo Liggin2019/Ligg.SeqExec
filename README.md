@@ -11,7 +11,7 @@ This project is a sequential execution tool by C++, can be used as a starter for
 ## Usage Guide.
 1. Each .exe file is linked to .ini file of same file name prefix. 
 
-2. In .ini file, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
+2. In .ini file, [RunAsAdmin]/[Id]='Administrator'  [RunAsAdmin]/[Password]='P@s$w0rd'. To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
 
 3. [IsDefaultMode]=false will pop up a list of all steps for selecting to execute.
 

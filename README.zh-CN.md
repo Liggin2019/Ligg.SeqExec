@@ -8,7 +8,6 @@
 
 
 ## 使用指南
-
 1. 每个.exe文件关联一个同名的配置文件。
 2. 在.ini文件里, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". 为确保在有[RunByAdmin]=true的设置步骤里，以管理员身份运行成功，请设置'Administrator'本地帐号的密码为"P@s$w0rd"。当然你可以用用例5的方式修改你的[RunAsAdmin]/[Id][Password]与实际匹配。
 
@@ -23,7 +22,7 @@
 7. 配置项[StartPolicy]决定了是否弹出密码验证窗口,规则是'运行文件名前缀+prefix' + '^0' or '运行文件名前缀' + '^n'(n>0)。也就是说，假如你的执行文件是LgSeqExec1.exe，'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'...的加密文本就是你的[StartPolicy]的值。'LgSeqExec1^0'无启动密码，'LgSeqExec1^1' to 'LgSeqExec1^n'有启动密码。
 
 ## 用例
-### 请下载‘demo.rar’对照
+### 请打开demo文件夹，对照运行各个用例，用例3的安装软件只是演示，不会真的安装软件到你的电脑。
 0. 用例0: .exe 文件: LgSeqExec.exe; .ini 文件: .\LgSeqExec.ini---直接运行一个基于.netFx4的外部执行文件，假如机器的.net Framework版本低于4.0，该执行文件会弹出错误提示。
 
 1. 用例1: .exe 文件: LgSeqExec1.exe; .ini 文件: .\LgSeqExec1.ini---通过配置项[RunAsAdmin]/[Id]&[Password]的用户来探测和安装.net Framework 4,然后运行一个基于.netFx4的外部执行文件。

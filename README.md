@@ -9,7 +9,6 @@ This project is a sequential execution tool by C++, can be used as a starter for
 
 
 ## Usage Guide.
-### Please download demo.rar file to run each case below.
 1. Each .exe file is linked to .ini file of same file name prefix. 
 
 2. In .ini file, [RunAsAdmin]/[Id]="Administrator"  [RunAsAdmin]/[Password]="P@s$w0rd". To ensure run as admin when setting [RunByAdmin]=true in Step-x, please change  password of your local accout 'Administrator' to  "P@s$w0rd". Or you can change your [RunAsAdmin]/[Id][Password] according to actual by the way of Case 5. 
@@ -30,6 +29,8 @@ This project is a sequential execution tool by C++, can be used as a starter for
 
 
 ## Cases
+### Please go to demo directory  to run each case below. 
+#### in case3 , installing software is fake demonstration, will not install on your computer.
 0. Case0: .exe file: LgSeqExec.exe; .ini file: .\LgSeqExec.ini---Directly run an outside .exe file based on .netFx 4, but  your .net Framework on your machine is below 4, the outside application will pop up a error message.
 
 1. Case1: .exe file: LgSeqExec1.exe; .ini file: .\LgSeqExec1.ini---Detect and install .net Framework 4 by assigned [RunAsAdmin]/[Id]&[Password] , then run an outside .exe file based on .net Framework 4. 

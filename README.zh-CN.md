@@ -1,45 +1,45 @@
-# ¹ØÓÚLigg.SeqExec
-¼òÌåÖÐÎÄ | [English](./README.md)
-- SeqExecÊÇ'Sequential Executor'µÄËõÐ´¡£
-- µ±Ç°°æ±¾: 1.2.1
-
-## ½éÉÜ
-±¾ÏîÄ¿ÊÇÒ»¸öË³ÐòÖ´ÐÐ¹¤¾ß£¬ÄÜ±»ÓÃ×÷.net³ÌÐòµÄÆô¶¯Æ÷¡£ÈÎÎñ°üÀ¨£ºÌ½²â.net framework°æ±¾¡¢°²×°.net framework¡¢Ð£ÑéÆô¶¯ÃÜÂë¡¢ÔËÐÐ.exeÎÄ¼þ(»òÒÔ¹ÜÀíÔ±ÕÊºÅ)¡¢Ö´ÐÐWindows½Å±¾(»òÒÔ¹ÜÀíÔ±ÕÊºÅ)ÒÔ¼°ÒÔ²»Í¬Ñ¡Ïî°²×°MSIÎÄ¼þ(»òÒÔ¹ÜÀíÔ±ÕÊºÅ)¡£
-
-
-## Ê¹ÓÃÖ¸ÄÏ
-1. Ã¿¸ö.exeÎÄ¼þ¹ØÁªÒ»¸öÍ¬ÃûµÄÅäÖÃÎÄ¼þ¡£
-2. ÔÚ.iniÎÄ¼þÀï, [RunAsAdmin]/[Id]='Administrator'  [RunAsAdmin]/[Password]='P@s$w0rd'. ÎªÈ·±£ÔÚÓÐ[RunByAdmin]=trueµÄÉèÖÃ²½ÖèÀï£¬ÒÔ¹ÜÀíÔ±Éí·ÝÔËÐÐ³É¹¦£¬ÇëÉèÖÃ'Administrator'±¾µØÕÊºÅµÄÃÜÂëÎª'P@s$w0rd'¡£µ±È»Äã¿ÉÒÔÓÃÓÃÀý5µÄ·½Ê½ÐÞ¸ÄÄãµÄ[RunAsAdmin]/[Id][Password]ÓëÊµ¼ÊÆ¥Åä¡£
-
-3. ÉèÖÃ[IsDefaultMode]=false»áµ¯³öÒ»¸öËùÓÐ²½ÖèµÄÁÐ±í¹©Ñ¡ÔñÊÇ·ñÖ´ÐÐ¡£
-
-4. ÉèÖÃ[IsQuietMode]=false,»áÔÚµ±²½ÖèÔËÐÐÊ±ÔÚÆÁÄ»×óÉÏ½Çµ¯³öÒ»¸ö²½ÖèÃèÊö´°¿Ú¡£
-
-5. ÉèÖÃ[IsCompulsory]=true,±íÊ¾¸Ã²½ÖèÊÇÇ¿ÖÆÖ´ÐÐµÄ¡£
-
-6. ¶ÔÓÚ[RunType]=InstallNetFx, [Args]=v4\Full^Install^1£¬¼ÙÈç.net FrameworkµÄ°æ±¾´óÓÚ4Ð¡ÓÚ5£¬Ì½²â³ÌÐòÄ¬ÈÏÕýÈ·£¬²»»á°²×°.net Framework£»Í¬Àí¶ÔÓÚ[Args]=v4.6\Full^Install^1£¬¼ÙÈç.net FrameworkµÄ°æ±¾´óÓÚ4.6Ð¡ÓÚ4.7£¬Ì½²â³ÌÐòÄ¬ÈÏÕýÈ·¡£
-
-7. ÅäÖÃÏî[StartPolicy]¾ö¶¨ÁËÊÇ·ñµ¯³öÃÜÂëÑéÖ¤´°¿Ú,¹æÔòÊÇ'ÔËÐÐÎÄ¼þÃûÇ°×º+prefix' + '^0' or 'ÔËÐÐÎÄ¼þÃûÇ°×º' + '^n'(n>0)¡£Ò²¾ÍÊÇËµ£¬¼ÙÈçÄãµÄÖ´ÐÐÎÄ¼þÊÇLgSeqExec1.exe£¬'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'...µÄ¼ÓÃÜÎÄ±¾¾ÍÊÇÄãµÄ[StartPolicy]µÄÖµ¡£'LgSeqExec1^0'ÎÞÆô¶¯ÃÜÂë£¬'LgSeqExec1^1' to 'LgSeqExec1^n'ÓÐÆô¶¯ÃÜÂë¡£
-
-## ÓÃÀý
-### Çë´ò¿ªdemoÎÄ¼þ¼Ð£¬¶ÔÕÕÔËÐÐ¸÷¸öÓÃÀý£¬ÓÃÀý3µÄ°²×°Èí¼þÖ»ÊÇÑÝÊ¾£¬²»»áÕæµÄ°²×°Èí¼þµ½ÄãµÄµçÄÔ¡£
-0. ÓÃÀý0: .exe ÎÄ¼þ: LgSeqExec.exe; .ini ÎÄ¼þ: .\LgSeqExec.ini---Ö±½ÓÔËÐÐÒ»¸ö»ùÓÚ.netFx4µÄÍâ²¿Ö´ÐÐÎÄ¼þ£¬¼ÙÈç»úÆ÷µÄ.net Framework°æ±¾µÍÓÚ4.0£¬¸ÃÖ´ÐÐÎÄ¼þ»áµ¯³ö´íÎóÌáÊ¾¡£
-
-1. ÓÃÀý1: .exe ÎÄ¼þ: LgSeqExec1.exe; .ini ÎÄ¼þ: .\LgSeqExec1.ini---Í¨¹ýÅäÖÃÏî[RunAsAdmin]/[Id]&[Password]µÄÓÃ»§À´Ì½²âºÍ°²×°.net Framework 4,È»ºóÔËÐÐÒ»¸ö»ùÓÚ.netFx4µÄÍâ²¿Ö´ÐÐÎÄ¼þ¡£
-
-2. ÓÃÀý2: .exe ÎÄ¼þ: LgSeqExec2.exe; .ini ÎÄ¼þ: .\LgSeqExec2.ini---Í¨¹ýÅäÖÃÏî[RunAsAdmin]/[Id]&[Password]µÄÓÃ»§À´Ì½²âºÍ°²×°.net Framework 4,È»ºóÐ£ÑéÃÜÂë(ÃÜÂë:123)£¬ÔÙÔËÐÐÒ»¸ö»ùÓÚ.netFx4µÄÍâ²¿Ö´ÐÐÎÄ¼þ¡£
-
-3. ÓÃÀý3: .exe ÎÄ¼þ: LgSeqExec3.exe; .ini ÎÄ¼þ: .\LgSeqExec3.ini---Í¨¹ýÅäÖÃÏî[RunAsAdmin]/[Id]&[Password]µÄÓÃ»§À´Ì½²âºÍ°²×°.net Framework 4,È»ºóÔËÐÐÒ»¸ö»ùÓÚ.netFx4µÄÍâ²¿Ö´ÐÐÎÄ¼þ¡£ÒòÎªÉèÖÃÁË[IsQuietMode]=false, [IsDefaultMode]=false£¬ËùÒÔ»áµ¯³öÓÐ²½ÖèÁÐ±íºÍ²½ÖèÃèÊö´°¿Ú¡£
-
-4. ÓÃÀý4: .exe ÎÄ¼þ: LgSeqExec4.exe; .ini ÎÄ¼þ: .\LgSeqExec4.ini---Í¨¹ýÅäÖÃÏî[RunAsAdmin]/[Id]&[Password]µÄÓÃ»§À´ÔËÐÐÒ»¸öÍâ²¿µÄLgXcopyA.exe(native³ÌÐò)½«ÎÄ¼þ¿½±´µ½c:\ºÍc:\temp¡£»áÓÐUAC´°¿Úµ¯³ö£¬µ«²»ÐèÊäÃÜÂë¡£
+# å…³äºŽLigg.SeqExec
+ç®€ä½“ä¸­æ–‡ | [English](./README.md)
+- SeqExecæ˜¯'Sequential Executor'çš„ç¼©å†™ã€‚
+- å½“å‰ç‰ˆæœ¬: 1.2.1
+- [Giteeé•œåƒ](https://www.gitee.com/liggin2019/Ligg.SeqExec)
+## ä»‹ç»
+æœ¬é¡¹ç›®æ˜¯ä¸€ä¸ªé¡ºåºæ‰§è¡Œå·¥å…·ï¼Œèƒ½è¢«ç”¨ä½œ.netç¨‹åºçš„å¯åŠ¨å™¨ã€‚ä»»åŠ¡åŒ…æ‹¬ï¼šæŽ¢æµ‹.net frameworkç‰ˆæœ¬ã€å®‰è£….net frameworkã€æ ¡éªŒå¯åŠ¨å¯†ç ã€è¿è¡Œ.exeæ–‡ä»¶(æˆ–ä»¥ç®¡ç†å‘˜å¸å·)ã€æ‰§è¡ŒWindowsè„šæœ¬(æˆ–ä»¥ç®¡ç†å‘˜å¸å·)ä»¥åŠä»¥ä¸åŒé€‰é¡¹å®‰è£…MSIæ–‡ä»¶(æˆ–ä»¥ç®¡ç†å‘˜å¸å·)ã€‚
 
 
-5. ÓÃÀý5: .exe ÎÄ¼þ: LgSeqExec5.exe; .ini ÎÄ¼þ: .\LgSeqExec5.ini---¼ÓÃÜÎÄ±¾¡£¹©¼ÓÃÜÅäÖÃÏî[RunAsAdmin]/[Id]&[Password]ºÍ[StartPolicy]¡£
+## ä½¿ç”¨æŒ‡å—
+1. æ¯ä¸ª.exeæ–‡ä»¶å…³è”ä¸€ä¸ªåŒåçš„é…ç½®æ–‡ä»¶ã€‚
+2. åœ¨.iniæ–‡ä»¶é‡Œ, [RunAsAdmin]/[Id]='Administrator'  [RunAsAdmin]/[Password]='P@s$w0rd'. ä¸ºç¡®ä¿åœ¨æœ‰[RunByAdmin]=trueçš„è®¾ç½®æ­¥éª¤é‡Œï¼Œä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡ŒæˆåŠŸï¼Œè¯·è®¾ç½®'Administrator'æœ¬åœ°å¸å·çš„å¯†ç ä¸º'P@s$w0rd'ã€‚å½“ç„¶ä½ å¯ä»¥ç”¨ç”¨ä¾‹5çš„æ–¹å¼ä¿®æ”¹ä½ çš„[RunAsAdmin]/[Id][Password]ä¸Žå®žé™…åŒ¹é…ã€‚
 
-## Ê¾Àý½ØÍ¼
-#### ÓÃÀý2
-![ÓÃÀý2](https://liggin2019.gitee.io/static/images/SeqExec/case2.png)
-#### ÓÃÀý3
-![ÓÃÀý3](https://liggin2019.gitee.io/static/images/SeqExec/case3.png)
-#### ÓÃÀý5
-![ÓÃÀý5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)
+3. è®¾ç½®[IsDefaultMode]=falseä¼šå¼¹å‡ºä¸€ä¸ªæ‰€æœ‰æ­¥éª¤çš„åˆ—è¡¨ä¾›é€‰æ‹©æ˜¯å¦æ‰§è¡Œã€‚
+
+4. è®¾ç½®[IsQuietMode]=false,ä¼šåœ¨å½“æ­¥éª¤è¿è¡Œæ—¶åœ¨å±å¹•å·¦ä¸Šè§’å¼¹å‡ºä¸€ä¸ªæ­¥éª¤æè¿°çª—å£ã€‚
+
+5. è®¾ç½®[IsCompulsory]=true,è¡¨ç¤ºè¯¥æ­¥éª¤æ˜¯å¼ºåˆ¶æ‰§è¡Œçš„ã€‚
+
+6. å¯¹äºŽ[RunType]=InstallNetFx, [Args]=v4\Full^Install^1ï¼Œå‡å¦‚.net Frameworkçš„ç‰ˆæœ¬å¤§äºŽ4å°äºŽ5ï¼ŒæŽ¢æµ‹ç¨‹åºé»˜è®¤æ­£ç¡®ï¼Œä¸ä¼šå®‰è£….net Frameworkï¼›åŒç†å¯¹äºŽ[Args]=v4.6\Full^Install^1ï¼Œå‡å¦‚.net Frameworkçš„ç‰ˆæœ¬å¤§äºŽ4.6å°äºŽ4.7ï¼ŒæŽ¢æµ‹ç¨‹åºé»˜è®¤æ­£ç¡®ã€‚
+
+7. é…ç½®é¡¹[StartPolicy]å†³å®šäº†æ˜¯å¦å¼¹å‡ºå¯†ç éªŒè¯çª—å£,è§„åˆ™æ˜¯'è¿è¡Œæ–‡ä»¶åå‰ç¼€+prefix' + '^0' or 'è¿è¡Œæ–‡ä»¶åå‰ç¼€' + '^n'(n>0)ã€‚ä¹Ÿå°±æ˜¯è¯´ï¼Œå‡å¦‚ä½ çš„æ‰§è¡Œæ–‡ä»¶æ˜¯LgSeqExec1.exeï¼Œ'LgSeqExec1^0' or 'LgSeqExec1^1' or 'LgSeqExec1^2'...çš„åŠ å¯†æ–‡æœ¬å°±æ˜¯ä½ çš„[StartPolicy]çš„å€¼ã€‚'LgSeqExec1^0'æ— å¯åŠ¨å¯†ç ï¼Œ'LgSeqExec1^1' to 'LgSeqExec1^n'æœ‰å¯åŠ¨å¯†ç ã€‚
+
+## ç”¨ä¾‹
+### è¯·æ‰“å¼€demoæ–‡ä»¶å¤¹ï¼Œå¯¹ç…§è¿è¡Œå„ä¸ªç”¨ä¾‹ï¼Œç”¨ä¾‹3çš„å®‰è£…è½¯ä»¶åªæ˜¯æ¼”ç¤ºï¼Œä¸ä¼šçœŸçš„å®‰è£…è½¯ä»¶åˆ°ä½ çš„ç”µè„‘ã€‚
+0. ç”¨ä¾‹0: .exe æ–‡ä»¶: LgSeqExec.exe; .ini æ–‡ä»¶: .\LgSeqExec.ini---ç›´æŽ¥è¿è¡Œä¸€ä¸ªåŸºäºŽ.netFx4çš„å¤–éƒ¨æ‰§è¡Œæ–‡ä»¶ï¼Œå‡å¦‚æœºå™¨çš„.net Frameworkç‰ˆæœ¬ä½ŽäºŽ4.0ï¼Œè¯¥æ‰§è¡Œæ–‡ä»¶ä¼šå¼¹å‡ºé”™è¯¯æç¤ºã€‚
+
+1. ç”¨ä¾‹1: .exe æ–‡ä»¶: LgSeqExec1.exe; .ini æ–‡ä»¶: .\LgSeqExec1.ini---é€šè¿‡é…ç½®é¡¹[RunAsAdmin]/[Id]&[Password]çš„ç”¨æˆ·æ¥æŽ¢æµ‹å’Œå®‰è£….net Framework 4,ç„¶åŽè¿è¡Œä¸€ä¸ªåŸºäºŽ.netFx4çš„å¤–éƒ¨æ‰§è¡Œæ–‡ä»¶ã€‚
+
+2. ç”¨ä¾‹2: .exe æ–‡ä»¶: LgSeqExec2.exe; .ini æ–‡ä»¶: .\LgSeqExec2.ini---é€šè¿‡é…ç½®é¡¹[RunAsAdmin]/[Id]&[Password]çš„ç”¨æˆ·æ¥æŽ¢æµ‹å’Œå®‰è£….net Framework 4,ç„¶åŽæ ¡éªŒå¯†ç (å¯†ç :123)ï¼Œå†è¿è¡Œä¸€ä¸ªåŸºäºŽ.netFx4çš„å¤–éƒ¨æ‰§è¡Œæ–‡ä»¶ã€‚
+
+3. ç”¨ä¾‹3: .exe æ–‡ä»¶: LgSeqExec3.exe; .ini æ–‡ä»¶: .\LgSeqExec3.ini---é€šè¿‡é…ç½®é¡¹[RunAsAdmin]/[Id]&[Password]çš„ç”¨æˆ·æ¥æŽ¢æµ‹å’Œå®‰è£….net Framework 4,ç„¶åŽè¿è¡Œä¸€ä¸ªåŸºäºŽ.netFx4çš„å¤–éƒ¨æ‰§è¡Œæ–‡ä»¶ã€‚å› ä¸ºè®¾ç½®äº†[IsQuietMode]=false, [IsDefaultMode]=falseï¼Œæ‰€ä»¥ä¼šå¼¹å‡ºæœ‰æ­¥éª¤åˆ—è¡¨å’Œæ­¥éª¤æè¿°çª—å£ã€‚
+
+4. ç”¨ä¾‹4: .exe æ–‡ä»¶: LgSeqExec4.exe; .ini æ–‡ä»¶: .\LgSeqExec4.ini---é€šè¿‡é…ç½®é¡¹[RunAsAdmin]/[Id]&[Password]çš„ç”¨æˆ·æ¥è¿è¡Œä¸€ä¸ªå¤–éƒ¨çš„LgXcopyA.exe(nativeç¨‹åº)å°†æ–‡ä»¶æ‹·è´åˆ°c:\å’Œc:\tempã€‚ä¼šæœ‰UACçª—å£å¼¹å‡ºï¼Œä½†ä¸éœ€è¾“å¯†ç ã€‚
+
+
+5. ç”¨ä¾‹5: .exe æ–‡ä»¶: LgSeqExec5.exe; .ini æ–‡ä»¶: .\LgSeqExec5.ini---åŠ å¯†æ–‡æœ¬ã€‚ä¾›åŠ å¯†é…ç½®é¡¹[RunAsAdmin]/[Id]&[Password]å’Œ[StartPolicy]ã€‚
+
+## ç¤ºä¾‹æˆªå›¾
+#### ç”¨ä¾‹2
+![ç”¨ä¾‹2](https://liggin2019.gitee.io/static/images/SeqExec/case2.png)
+#### ç”¨ä¾‹3
+![ç”¨ä¾‹3](https://liggin2019.gitee.io/static/images/SeqExec/case3.png)
+#### ç”¨ä¾‹5
+![ç”¨ä¾‹5](https://liggin2019.gitee.io/static/images/SeqExec/case5.png)

@@ -1,8 +1,9 @@
 # About Ligg.SeqExec
-English | [简体中文](./README.zh-CN.md)
+English | [绠�浣撲腑鏂嘳(./README.zh-CN.md)
 
 - SeqExec is abbreviation of 'Sequential Executor'. 
 - Current version: 1.2.1
+- [Gitee Mirror](https://www.gitee.com/liggin2019/Ligg.SeqExec)
 
 ## Introduction
 This project is a sequential execution tool by C++, can be used as a starter for .net program. Tasks include: detect .net framework version, install .net framework, verify password at start, run exe file(or as admin), execute a command(or as admin), install MSI format file by options. 
@@ -44,7 +45,7 @@ This project is a sequential execution tool by C++, can be used as a starter for
 4. Case4: .exe file: LgSeqExec4.exe; .ini file: .\LgSeqExec4.ini---Run outside LgXcopyA.exe(a native program) to copy a file to c:\ and c:\temp by assigned [RunAsAdmin]/[Id]&[Password]. it will pop up a UAC dialog, but no need to input password. 
 
 
-5. Case5: .exe file: LgSeqExec5.exe; .ini file: .\LgSeqExec5.ini---Encrypt text for [RunAsAdmin]/[Id]&[Password]和[StartPolicy] in .ini file. 
+5. Case5: .exe file: LgSeqExec5.exe; .ini file: .\LgSeqExec5.ini---Encrypt text for [RunAsAdmin]/[Id]&[Password]鍜孾StartPolicy] in .ini file. 
 
 ## Demo Snapshot
 
